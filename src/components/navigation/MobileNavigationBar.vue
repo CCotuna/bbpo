@@ -27,7 +27,7 @@ const setLanguage = (lang) => {
 <template>
     <!-- MOBILE NAVBAR (fixed top) -->
     <header
-        class="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-xl px-6 py-4 flex items-center justify-between md:hidden">
+        class="fixed top-0 left-0 right-0 w-full z-50 bg-black/50 backdrop-blur-xl px-6 py-2 flex items-center justify-between shadow-lg md:hidden">
 
         <!-- LOGO -->
         <RouterLink to="/" class="text-white text-2xl font-extrabold tracking-wide">
@@ -43,7 +43,7 @@ const setLanguage = (lang) => {
     <!-- MOBILE MENU (slide-down) -->
     <transition name="slide-fade">
         <div v-if="menuOpen"
-            class="fixed top-16 left-0 right-0 bg-black/80 backdrop-blur-xl z-40 flex flex-col py-6 px-6 space-y-4 text-white md:hidden">
+            class="fixed top-12 left-0 right-0 bg-black/80 backdrop-blur-xl z-40 flex flex-col py-6 px-6 space-y-4 text-white md:hidden">
 
             <!-- LINKS -->
             <RouterLink @click="menuOpen = false" to="/about"

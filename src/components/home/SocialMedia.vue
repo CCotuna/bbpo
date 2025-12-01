@@ -4,7 +4,7 @@ import RotatingBadge from '@/components/svgs/RotatingBadge.vue'
 import Logo from '@/components/logo/Logo.vue'
 
 const props = defineProps({
-    mainImage: { type: String, default: 'https://picsum.photos/seed/church/800/600' },
+    mainImage: { type: String, default: 'https://images.pexels.com/photos/159108/light-lamp-electricity-power-159108.jpeg' },
 
     instagram: { type: String, default: '' },
     instagramLink: { type: String, default: '' },

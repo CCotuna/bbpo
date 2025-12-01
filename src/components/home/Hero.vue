@@ -48,7 +48,6 @@ const churchFaqs = [
 const tabsData = ref([
     { id: 'program', navTitle: 'Program', component: ProgramTab },
     { id: 'locatie', navTitle: 'Locatie', component: ContactTab },
-    { id: 'doneaza', navTitle: 'Doneaza', component: DonationTab },
     {
         id: 'faq',
         navTitle: 'Intrebari frecvente',
@@ -63,6 +62,7 @@ const tabsData = ref([
             faqs: churchFaqs,
         },
     },
+    { id: 'doneaza', navTitle: 'Doneaza', component: DonationTab },
 ])
 
 const currentTab = computed(() => tabsData.value[selectedIndex.value])
@@ -123,17 +123,17 @@ const currentTab = computed(() => tabsData.value[selectedIndex.value])
         </div>
     </section>
 
-    <div class="block md:hidden absolute -bottom-20 left-1/2 transform -translate-x-1/2 z-30 animate-float">
+    <!-- <div class="block md:hidden absolute -bottom-20 left-1/2 transform -translate-x-1/2 z-30 animate-float">
         <RotatingBadge :size="140" circular-text1="• BISERICA PROVIDENTA •" circular-text2="• CREDINTA • INCHINARE •"
             duration="12s">
             <template #logo>
                 <Logo :size="55" :color="'white'" />
             </template>
         </RotatingBadge>
-    </div>
+    </div> -->
 
     <!-- TABS CONTENT BELOW HERO -->
-    <section class="relative w-full py-12">
+    <section class="relative w-full py-12 pt-0 md:pt-12">
         <div class="mx-auto px-4 sm:px-6 md:px-12">
             <!-- Render componentul corespunzator tab-ului selectat -->
             <component :is="currentTab.component" v-bind="currentTab.props || {}" />

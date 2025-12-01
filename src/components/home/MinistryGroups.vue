@@ -120,7 +120,7 @@ const scrollRight = () => {
                 </button>
 
 
-                <button @click="scrollRight" class="z-20 absolute -right-5 md:right-0 top-1/2 -translate-y-1/2
+                <button @click="scrollRight" class="z-20 absolute -right-2 md:right-0 top-1/2 -translate-y-1/2
            bg-black/40 hover:bg-black/60
            backdrop-blur-md
            p-3 rounded-full border border-white/10 

@@ -1,5 +1,5 @@
 <script setup>
-import Image2 from '@/assets/Section2.jpeg'
+import Image2 from '@/assets/Section22.jpeg'
 </script>
 
 <template>
